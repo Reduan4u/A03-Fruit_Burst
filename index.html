@@ -12,6 +12,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
@@ -22,26 +25,78 @@
             theme: {
                 extend: {
                     colors: {
-                        'gradient-start': '#FF8938',
+                        'primary-color': '#F85559',
                     }
                 }
             }
         }
     </script>
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+        .font-lato {
+            font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 
-<body>
-    <!--  -->
-    <nav>
-    </nav>
+<body class="font-lato">
+    <header class="max-w-screen-2xl w-10/12 m-auto">
+        <!--  -->
+        <nav>
+            <div class="navbar bg-primary-color rounded-full lg:px-10 md:px-10 my-12">
+                <div class="navbar-start hidden md:hidden lg:flex text-white ">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center text-white">
+                    <a class=""> <img class="w-2/3" src="./images/logo.png" alt=""></a>
+                    <a class="btn btn-ghost normal-case text-4xl font-bold p-0">Fruit_Burst</a>
+                </div>
 
-    <!--  -->
-    <header>
+                <div class="navbar-end">
+                    <div class="form-control">
+                        <div>
+                            <input type="text" placeholder="Search here"
+                                class="input input-bordered rounded-full w-24 hidden lg:block md:block md:w-auto" />
+                            <button type="submit" class="absolute -mt-8 ml-48">
+                                <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966"
+                                    style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px"
+                                    height="512px">
+                                    <path
+                                        d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <!--  -->
+        <section>
+        </section>
+
     </header>
 
     <main>
